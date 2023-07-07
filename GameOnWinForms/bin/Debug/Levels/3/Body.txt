@@ -6,7 +6,7 @@ namespace SystemController
     {
 	public void Start(int pass)
         {
-	    door1.TryOpen(0); //9999999
+	    door1.TryOpen(pass);
 	}
     }
 }

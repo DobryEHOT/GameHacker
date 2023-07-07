@@ -7,7 +7,6 @@ namespace SystemController
         public void Start()
         {
             panel1.Move();
-            panel2.Move();
         }
     }
 }
