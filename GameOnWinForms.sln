@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOnWinForms", "GameOnWinForms\GameOnWinForms.csproj", "{43E1C3DB-5950-42FA-B5C7-2BA9F3B0D99B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E1C3DB-5950-42FA-B5C7-2BA9F3B0D99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E1C3DB-5950-42FA-B5C7-2BA9F3B0D99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E1C3DB-5950-42FA-B5C7-2BA9F3B0D99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E1C3DB-5950-42FA-B5C7-2BA9F3B0D99B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8E5ECA4-3061-4A9E-B203-08914BC08301}
+	EndGlobalSection
+EndGlobal

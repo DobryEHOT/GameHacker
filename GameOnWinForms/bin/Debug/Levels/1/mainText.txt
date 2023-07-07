@@ -1,0 +1,26 @@
+using System;
+using SecurityFramework;
+
+namespace SystemController
+{
+    class SystemController
+    {
+        static void Main()
+        {
+	    Console.WriteLine("(SF) Start");
+
+	    var b = new Body();
+	    b.door1 = new Door(1);
+	    b.password = 9999999;
+	    b.Start(0);
+
+           // Console.ReadLine();
+        }
+    }
+
+    public class Base
+    {
+	public Door door1;
+	public int password;
+    }
+}

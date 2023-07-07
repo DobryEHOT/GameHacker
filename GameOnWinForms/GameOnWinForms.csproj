@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43E1C3DB-5950-42FA-B5C7-2BA9F3B0D99B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GameOnWinForms</RootNamespace>
+    <AssemblyName>GameOnWinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.Direct3DX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="enums.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameObject.cs" />
+    <Compile Include="Geometry.cs" />
+    <Compile Include="HackerConsole.cs" />
+    <Compile Include="InputSys.cs" />
+    <Compile Include="InteractiveObject.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Physics.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scen.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\-45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\-135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\person\Idle\default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\Backgraund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\wall_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\wall_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\wall_360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\doorClosed_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\doorClosed_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\doorOpen_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\doorOpen_180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\movePanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\holl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\All_Image\consolePanel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

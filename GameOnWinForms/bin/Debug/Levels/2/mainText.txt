@@ -1,0 +1,25 @@
+using System;
+using SecurityFramework;
+
+namespace SystemController
+{
+    class SystemController
+    {
+        static void Main()
+        {
+	    Console.WriteLine("(SF) Start");
+
+	    var b = new Body();
+
+	    b.Start();
+
+           // Console.ReadLine();
+        }
+    }
+
+    public class Base
+    {
+	public MovePanel panel1 = new MovePanel(1);
+        public MovePanel panel2 = new MovePanel(2);
+    }
+}
